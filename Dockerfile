@@ -1,5 +1,5 @@
 FROM ubuntu:quantal
-MAINTAINER luxifer "it@audiosocket.com"
+MAINTAINER audiosocket "it@audiosocket.com"
 
 RUN apt-get update
 RUN apt-get -y install redis-server
