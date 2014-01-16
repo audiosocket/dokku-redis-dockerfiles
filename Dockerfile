@@ -5,7 +5,7 @@ MAINTAINER audiosocket "it@audiosocket.com"
 RUN	echo "#!/bin/sh\nexit 101" > /usr/sbin/policy-rc.d; chmod +x /usr/sbin/policy-rc.d
 
 RUN apt-get update
-RUN	LC_ALL=C DEBIAN_FRONTEND=noninteractive apt-get -y install redis-server
+RUN LC_ALL=C DEBIAN_FRONTEND=noninteractive apt-get -y install redis-server
 RUN rm -rf /var/lib/apt/lists/*
 RUN apt-get clean
 
